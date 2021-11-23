@@ -1,0 +1,168 @@
+.ff-global {
+  font-family: $global-font-size;
+}
+
+.ff-helvetica {
+  font-family: "Helvetica", "Arial";
+}
+
+p {
+  &.preheader {
+    font-size: $global-font-size * 0.75;
+    line-height: $global-line-height;
+
+    &.bold {
+      font-weight: bold;
+    }
+
+    a {
+      color: $light-gray;
+      text-decoration: $anchor-text-decoration;
+    }
+  }
+
+  &.list-item {
+    padding-left: 20px;
+  }
+}
+
+.l-through {
+  text-decoration: line-through;
+}
+
+.num-list {
+  td {
+    &.list-number {
+      color: $yellow;
+      margin: 0;
+      padding: 0;
+      font-family: $serif-font-family;
+      font-weight: bold;
+  
+      &.big {
+        font-size: 48px;
+        width: 43px;
+        line-height: 1;
+        vertical-align: bottom;
+      }
+  
+      &.normal {
+        font-size: 25px;
+        width: 30px;
+        line-height: 0.6;
+        padding-bottom: 3px;
+        vertical-align: top;
+        padding-top: 0;
+        margin-top: 0;
+      }
+    }
+  }
+
+  td.list-text {
+    margin: 0;
+    padding: 0;
+    vertical-align: bottom;
+    font-size: $global-font-size;
+    padding-bottom: 6px;
+    padding-top: 2px;
+    line-height: 1;
+  }
+}
+
+img.top-logo {
+  width: 214px;
+}
+
+.top-menu {
+  background-color: $black;
+
+  .wrapper-inner {
+    padding: 10px 0;
+    td.columns,
+    td.column,
+    th.columns,
+    th.column {
+      padding: 0;
+    }
+  }
+
+  .container {
+    background-color: $black;
+  }
+
+  /*.divider {
+    color: $dark-gray;
+    font-size: 20px;
+    padding-bottom: 15px;
+  }*/
+}
+
+/*.v-line {
+  display: inline-table;
+  tr {
+    td {
+      width: 1px;
+      padding: 5px 0;
+      border-left: 1px solid $light-gray;
+      font-size: 20px;
+    }
+  }
+}*/
+
+.top-phone {
+  vertical-align: middle;
+  /*padding: 5px 0;*/
+  border-left: 1px solid $light-gray;
+
+  a {
+    color: $white;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  img {
+    display: inline;
+  }
+}
+
+th {
+  &.callout-inner {
+    &.offer, &.offer-nb {
+      vertical-align: top;
+      padding: 0;
+      .offer-inner {
+        border: none;
+        border-spacing: 0;
+        td {
+          padding: 10px;
+          border: none;
+          &.offer-text {
+            vertical-align: middle;
+            line-height: 1;
+          }
+        }
+      }
+    }
+    &.offer-nb {
+      .offer-inner {
+        td {
+          padding: 10px 10px 10px 0;
+          &.offer-text {
+            padding: 10px 0 10px 10px;
+          }
+        }
+      }
+      img {
+        display: inline;
+      }
+    }
+  }
+}
+
+.list {
+  .list-none {
+    list-style-type: none;
+    li {
+      list-style-type: none;
+    }
+  }
+}
