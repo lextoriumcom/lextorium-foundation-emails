@@ -22,5 +22,14 @@ module.exports = function(element) {
       }
 
       return format('<table %s class="calloutadv"><tbody><tr><th class="%s">%s</th><th class="expander"></th></tr></tbody></table>', attrs, classes.join(' '), inner);
+
+    // <offer>
+    case this.components.offer:
+      var classes = ['callout-inner'];
+      if (element.attr('class')) {
+        classes = classes.concat(element.attr('class').split(' '));
+      }
+
+      return format('<table %s class="callout"><tbody><tr><th class="%s"><table class="offer-inner"><tbody><tr><td><img src="https://i.ibb.co/RvCGMRC/offer-tag.png" alt="Offer tag"></td><td class="offer-text">%s</td></tr></tbody></table></th><th class="expander"></th></tr></tbody></table>', attrs, classes.join(' '), inner);
   }
 }
